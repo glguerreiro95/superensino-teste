@@ -1,3 +1,6 @@
 from django.contrib import admin
+from correcao.models import questao, lista
 
-# Register your models here.
+admin.site.register(questao)
+admin.site.register(lista)
+
