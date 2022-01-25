@@ -4,8 +4,8 @@ Teste backend - Super Ensino
 **CRUD:**
 
 Superuser - 
-    User: superensino
-    senha: abcd1234
+User: superensino
+senha: abcd1234
 
 Para a criação de novas listas e questões, basta usar o link (127.0.0.1:8000/admin) e então logar com o super usuário, onde o CRUD estará disponível.
 Inicialmente deve-se criar as listas, para que então ao criar exercícios, esses possam ser atribuidos a uma ou mais listas.
