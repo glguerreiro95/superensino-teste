@@ -1,5 +1,8 @@
 from django.db import models
 
+class lista(models.Model):
+    numero = models.IntegerField(unique=True)
+
 class questao(models.Model):
     enunciado = models.CharField(max_length=255)
     alternativa1 = models.CharField(max_length=255)
@@ -8,6 +11,4 @@ class questao(models.Model):
     alternativacorreta = models.CharField(max_length=255)
     respondido = models.BooleanField()
     correto = models.BooleanField()
-
-class lista(models.Model):
-    questoes = models.ManyToManyField(questao)
+    listas = models.ManyToManyField(lista)
